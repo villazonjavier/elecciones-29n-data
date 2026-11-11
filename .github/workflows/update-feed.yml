@@ -1,0 +1,70 @@
+name: Update public election feed
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "23 * * * *"
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - ".github/workflows/update-feed.yml"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: election-data-pages
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-24.04
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Generate feed from public sources
+        run: python scripts/update_feed.py
+
+      - name: Validate JSON
+        shell: bash
+        run: |
+          python -m json.tool public/api/v1/elections/spain/2026/latest.json >/dev/null
+          python - <<'PY'
+          import json
+          d=json.load(open("public/api/v1/elections/spain/2026/latest.json"))
+          assert d["dataType"]=="ESTIMATE"
+          assert sum(p["seats"] for p in d["parties"])==350
+          assert len(d["provinces"])==52
+          assert sum(p["seats"] for p in d["provinces"])==350
+          assert d["pollCount"]>0
+          print("Feed validado:", d["dataAsOf"], d["pollCount"], "encuestas/casas")
+          PY
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: election-feed
+          path: public
+          retention-days: 30
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+      - name: Deploy Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
