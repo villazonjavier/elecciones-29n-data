@@ -306,6 +306,23 @@ def build():
 def main():
     out=Path("public/api/v1/elections/spain/2026/latest.json")
     out.parent.mkdir(parents=True,exist_ok=True)
+    local=datetime.now(timezone.utc).astimezone(MADRID).date()
+    if local >= BLACKOUT:
+        # Durante la veda no recalculamos ni publicamos nuevas estimaciones.
+        # Conservamos el último snapshot pre-veda para trazabilidad; la app aplica
+        # además su propia política de publicación y no lo muestra como estimación vigente.
+        previous=Path("api/v1/elections/spain/2026/latest.json")
+        if not previous.exists():
+            raise RuntimeError("Veda electoral y no existe snapshot pre-veda")
+        out.write_bytes(previous.read_bytes())
+        Path("public/meta").mkdir(parents=True,exist_ok=True)
+        prev_meta=Path("meta/sources.json")
+        if prev_meta.exists():
+            Path("public/meta/sources.json").write_bytes(prev_meta.read_bytes())
+        Path("public/index.html").write_text("""<!doctype html><meta charset="utf-8"><title>Elecciones 29N · Datos</title>
+<h1>Elecciones 29N · Datos públicos</h1><p>Veda electoral: se conserva el último snapshot pre-veda; no se recalculan encuestas.</p>""",encoding="utf-8")
+        print("Veda electoral: snapshot pre-veda preservado")
+        return
     feed=build()
     out.write_text(json.dumps(feed,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     Path("public/meta").mkdir(parents=True,exist_ok=True)
