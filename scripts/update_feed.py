@@ -52,6 +52,19 @@ ALIASES = {
 "JUNTS":"JUNTS","EH Bildu":"BILDU","Bildu":"BILDU","BILDU":"BILDU","PNV":"PNV","BNG":"BNG",
 "CC":"CC","CCa":"CC","UPN":"UPN","PACMA":"PACMA"
 }
+EXCLUDED_HOUSES = {"PSOE","PP","VOX","PODEMOS","SUMAR","FRENTE AMPLIO"}
+
+def poll_family(label: str):
+    raw=str(label)
+    if raw in ALIASES: return ALIASES[raw]
+    n=norm(raw)
+    if "FRENTE AMPLIO" in n or "SUMAR" in n or n in {"FA","F AMPLIO","FAMPLIO"}: return "FA"
+    if n=="VOX": return "VOX"
+    if n=="PP": return "PP"
+    if n=="PSOE": return "PSOE"
+    if "PODEMOS" in n: return "PODEMOS"
+    if "SALF" in n or "SE ACABO LA FIESTA" in n: return "SALF"
+    return raw.upper()
 
 @dataclass(frozen=True)
 class Obs:
@@ -102,7 +115,7 @@ def aggregate(raw):
         except Exception: continue
         house=str(p.get("empresa") or p.get("medio") or "").strip()
         est=p.get("est")
-        if not house or not isinstance(est,dict): continue
+        if not house or norm(house) in EXCLUDED_HOUSES or not isinstance(est,dict): continue
         rows.append((p,end,house))
     if not rows: raise RuntimeError("Sin encuestas utilizables")
     latest=max(x[1] for x in rows)
@@ -115,7 +128,7 @@ def aggregate(raw):
             if end<cutoff: continue
             value=None
             for k,v in p["est"].items():
-                if ALIASES.get(str(k),str(k).upper())==party and isinstance(v,(int,float)):
+                if poll_family(str(k))==party and isinstance(v,(int,float)):
                     value=float(v); break
             if value is None: continue
             o=Obs(house,end,p.get("muestra") if isinstance(p.get("muestra"),int) else None,value,str(p.get("fuente") or SOURCE_PAGE))
@@ -128,9 +141,23 @@ def aggregate(raw):
         sigma=min(3.5,max(.45,math.sqrt(var) if len(obs)>1 else .8))
         result[party]={"mean":mean,"sigma":sigma,"houses":len(obs),"sources":sorted({o.source for o in obs})}
         used.update((o.house,o.end.isoformat()) for o in obs)
-    for req in ("PP","PSOE","VOX"):
+    if "FA" not in result:
+        result["FA"]={
+            "mean":6.6,
+            "sigma":0.8,
+            "houses":0,
+            "sources":[
+                "https://www.ondacero.es/elecciones/generales/encuestas/",
+                "https://electoscope.es/encuestas",
+                "https://eleccionesenespana.es/encuestas/"
+            ],
+            "fallback":True,
+            "observedAt":"2026-11-05"
+        }
+    for req in ("PP","PSOE","VOX","FA"):
         if req not in result: raise RuntimeError(f"Falta estimación {req}")
-    return result, {"latest":latest.isoformat(),"pollCount":len(used),"houses":sorted({h for h,_ in used})}
+    return result, {"latest":latest.isoformat(),"pollCount":len(used),"houses":sorted({h for h,_ in used}),
+                    "fallbackParties":[k for k,v in result.items() if v.get("fallback")]}
 
 def baseline(raw):
     provs=raw.get("provincias",{})
@@ -268,6 +295,7 @@ def build():
       "source":f"Agregador Elecciones 29N · {pm['pollCount']} observaciones / {len(pm['houses'])} casas",
       "sourceUrl":SOURCE_PAGE,"dataType":"ESTIMATE","countedPercent":None,"turnoutPercent":None,
       "modelVersion":MODEL_VERSION,"pollCount":pm["pollCount"],"houses":pm["houses"],
+      "fallbackParties":pm.get("fallbackParties",[]),
       "methodology":"Intención de voto: última encuesta por casa en ventana de 21 días, ponderada por recencia y raíz de muestra. Escaños: swing provincial sobre el resultado oficial de 23J, umbral del 3 % y D'Hondt. La proyección es un modelo, no un dato oficial.",
       "sources":[POLL_URL,BASELINE_URL,INTERIOR_URL,INE_URL,BOE_URL],
       "parties":parties,"provinces":provs,
