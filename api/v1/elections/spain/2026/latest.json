@@ -1,0 +1,1772 @@
+{
+  "timestamp": 1794390799233,
+  "dataAsOf": "2026-11-09",
+  "source": "Agregador Elecciones 29N · 19 observaciones / 19 casas",
+  "sourceUrl": "https://votomunicipal.es/datos-abiertos/",
+  "dataType": "ESTIMATE",
+  "countedPercent": null,
+  "turnoutPercent": null,
+  "modelVersion": "poll-average-provincial-swing-v3",
+  "pollCount": 19,
+  "houses": [
+    "40dB",
+    "Ateneo del Dato",
+    "Celeste-Tel",
+    "DYM",
+    "Data10",
+    "EM-Analytics",
+    "GAD3",
+    "Hamalgama Métrica",
+    "IMOP",
+    "More in Common",
+    "NC Report",
+    "PSOE",
+    "SW Demoscopia",
+    "Sigma Dos",
+    "SocioMétrica",
+    "Sondaxe",
+    "Target Point",
+    "Vox",
+    "Winston"
+  ],
+  "methodology": "Intención de voto: última encuesta por casa en ventana de 21 días, ponderada por recencia y raíz de muestra. Escaños: swing provincial sobre el resultado oficial de 23J, umbral del 3 % y D'Hondt. La proyección es un modelo, no un dato oficial.",
+  "sources": [
+    "https://votomunicipal.es/datos/encuestas.json",
+    "https://votomunicipal.es/datos/congreso-202307.json",
+    "https://infoelectoral.interior.gob.es/es/elecciones-celebradas/datos-abiertos/index.html",
+    "https://www.ine.es/dyngs/Prensa/es/EG2026.htm",
+    "https://www.boe.es/eli/es/rd/2026/10/05/806"
+  ],
+  "parties": [
+    {
+      "id": "pp",
+      "name": "Partido Popular",
+      "shortName": "PP",
+      "votePercent": 30.97,
+      "seats": 131,
+      "lowSeats": 125,
+      "highSeats": 138
+    },
+    {
+      "id": "psoe",
+      "name": "Partido Socialista Obrero Español",
+      "shortName": "PSOE",
+      "votePercent": 27.39,
+      "seats": 118,
+      "lowSeats": 108,
+      "highSeats": 123
+    },
+    {
+      "id": "vox",
+      "name": "Vox",
+      "shortName": "VOX",
+      "votePercent": 18.97,
+      "seats": 69,
+      "lowSeats": 65,
+      "highSeats": 74
+    },
+    {
+      "id": "erc",
+      "name": "Esquerra Republicana de Catalunya",
+      "shortName": "ERC",
+      "votePercent": 2.49,
+      "seats": 12,
+      "lowSeats": 9,
+      "highSeats": 13
+    },
+    {
+      "id": "bildu",
+      "name": "EH Bildu",
+      "shortName": "EH BILDU",
+      "votePercent": 1.44,
+      "seats": 7,
+      "lowSeats": 6,
+      "highSeats": 10
+    },
+    {
+      "id": "junts",
+      "name": "Junts",
+      "shortName": "JUNTS",
+      "votePercent": 1.37,
+      "seats": 5,
+      "lowSeats": 3,
+      "highSeats": 8
+    },
+    {
+      "id": "pnv",
+      "name": "EAJ-PNV",
+      "shortName": "PNV",
+      "votePercent": 0.83,
+      "seats": 4,
+      "lowSeats": 1,
+      "highSeats": 6
+    },
+    {
+      "id": "bng",
+      "name": "Bloque Nacionalista Galego",
+      "shortName": "BNG",
+      "votePercent": 0.97,
+      "seats": 2,
+      "lowSeats": 1,
+      "highSeats": 6
+    },
+    {
+      "id": "cc",
+      "name": "Coalición Canaria",
+      "shortName": "CC",
+      "votePercent": 0.43,
+      "seats": 1,
+      "lowSeats": 0,
+      "highSeats": 3
+    },
+    {
+      "id": "upn",
+      "name": "UPN",
+      "shortName": "UPN",
+      "votePercent": 0.21,
+      "seats": 1,
+      "lowSeats": 1,
+      "highSeats": 1
+    },
+    {
+      "id": "salf",
+      "name": "Se Acabó La Fiesta",
+      "shortName": "SALF",
+      "votePercent": 1.78,
+      "seats": 0,
+      "lowSeats": 0,
+      "highSeats": 0
+    },
+    {
+      "id": "podemos",
+      "name": "Podemos",
+      "shortName": "PODEMOS",
+      "votePercent": 1.76,
+      "seats": 0,
+      "lowSeats": 0,
+      "highSeats": 2
+    }
+  ],
+  "provinces": [
+    {
+      "code": "04",
+      "name": "Almería",
+      "seats": 6,
+      "parties": [
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 122161,
+          "seats": 3
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 103849,
+          "seats": 2
+        },
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 79974,
+          "seats": 1
+        }
+      ]
+    },
+    {
+      "code": "11",
+      "name": "Cádiz",
+      "seats": 8,
+      "parties": [
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 225665,
+          "seats": 3
+        },
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 198432,
+          "seats": 3
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 161012,
+          "seats": 2
+        }
+      ]
+    },
+    {
+      "code": "14",
+      "name": "Córdoba",
+      "seats": 6,
+      "parties": [
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 175766,
+          "seats": 3
+        },
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 137523,
+          "seats": 2
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 105744,
+          "seats": 1
+        },
+        {
+          "id": "podemos",
+          "shortName": "PODEMOS",
+          "votes": 9708,
+          "seats": 0
+        }
+      ]
+    },
+    {
+      "code": "18",
+      "name": "Granada",
+      "seats": 7,
+      "parties": [
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 186311,
+          "seats": 3
+        },
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 153358,
+          "seats": 2
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 132830,
+          "seats": 2
+        }
+      ]
+    },
+    {
+      "code": "21",
+      "name": "Huelva",
+      "seats": 5,
+      "parties": [
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 93840,
+          "seats": 2
+        },
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 85472,
+          "seats": 2
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 61629,
+          "seats": 1
+        }
+      ]
+    },
+    {
+      "code": "23",
+      "name": "Jaén",
+      "seats": 5,
+      "parties": [
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 135022,
+          "seats": 2
+        },
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 121192,
+          "seats": 2
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 87293,
+          "seats": 1
+        },
+        {
+          "id": "local-jm",
+          "shortName": "JM",
+          "votes": 8686,
+          "seats": 0
+        }
+      ]
+    },
+    {
+      "code": "29",
+      "name": "Málaga",
+      "seats": 11,
+      "parties": [
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 302779,
+          "seats": 5
+        },
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 221337,
+          "seats": 3
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 212765,
+          "seats": 3
+        }
+      ]
+    },
+    {
+      "code": "41",
+      "name": "Sevilla",
+      "seats": 12,
+      "parties": [
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 373969,
+          "seats": 5
+        },
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 369519,
+          "seats": 4
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 241092,
+          "seats": 3
+        },
+        {
+          "id": "podemos",
+          "shortName": "PODEMOS",
+          "votes": 23687,
+          "seats": 0
+        }
+      ]
+    },
+    {
+      "code": "22",
+      "name": "Huesca",
+      "seats": 3,
+      "parties": [
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 46818,
+          "seats": 1
+        },
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 38046,
+          "seats": 1
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 25346,
+          "seats": 1
+        }
+      ]
+    },
+    {
+      "code": "44",
+      "name": "Teruel",
+      "seats": 3,
+      "parties": [
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 25441,
+          "seats": 1
+        },
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 19632,
+          "seats": 1
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 15544,
+          "seats": 1
+        },
+        {
+          "id": "local-existe",
+          "shortName": "EXISTE",
+          "votes": 11592,
+          "seats": 0
+        }
+      ]
+    },
+    {
+      "code": "50",
+      "name": "Zaragoza",
+      "seats": 7,
+      "parties": [
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 190505,
+          "seats": 3
+        },
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 150502,
+          "seats": 2
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 132410,
+          "seats": 2
+        },
+        {
+          "id": "podemos",
+          "shortName": "PODEMOS",
+          "votes": 10870,
+          "seats": 0
+        }
+      ]
+    },
+    {
+      "code": "33",
+      "name": "Asturias",
+      "seats": 7,
+      "parties": [
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 224803,
+          "seats": 3
+        },
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 199931,
+          "seats": 3
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 128830,
+          "seats": 1
+        },
+        {
+          "id": "podemos",
+          "shortName": "PODEMOS",
+          "votes": 14269,
+          "seats": 0
+        },
+        {
+          "id": "salf",
+          "shortName": "SALF",
+          "votes": 11970,
+          "seats": 0
+        }
+      ]
+    },
+    {
+      "code": "07",
+      "name": "Illes Balears",
+      "seats": 8,
+      "parties": [
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 188268,
+          "seats": 3
+        },
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 147111,
+          "seats": 3
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 131451,
+          "seats": 2
+        },
+        {
+          "id": "podemos",
+          "shortName": "PODEMOS",
+          "votes": 13361,
+          "seats": 0
+        }
+      ]
+    },
+    {
+      "code": "35",
+      "name": "Las Palmas",
+      "seats": 8,
+      "parties": [
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 161603,
+          "seats": 3
+        },
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 136393,
+          "seats": 3
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 126065,
+          "seats": 2
+        },
+        {
+          "id": "local-nc bc",
+          "shortName": "NC BC",
+          "votes": 45140,
+          "seats": 0
+        },
+        {
+          "id": "cc",
+          "shortName": "CC",
+          "votes": 32369,
+          "seats": 0
+        }
+      ]
+    },
+    {
+      "code": "38",
+      "name": "Santa Cruz de Tenerife",
+      "seats": 7,
+      "parties": [
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 194944,
+          "seats": 3
+        },
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 170492,
+          "seats": 3
+        },
+        {
+          "id": "cc",
+          "shortName": "CC",
+          "votes": 89394,
+          "seats": 1
+        },
+        {
+          "id": "salf",
+          "shortName": "SALF",
+          "votes": 10467,
+          "seats": 0
+        }
+      ]
+    },
+    {
+      "code": "39",
+      "name": "Cantabria",
+      "seats": 5,
+      "parties": [
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 145624,
+          "seats": 2
+        },
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 106381,
+          "seats": 2
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 79606,
+          "seats": 1
+        }
+      ]
+    },
+    {
+      "code": "02",
+      "name": "Albacete",
+      "seats": 4,
+      "parties": [
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 85041,
+          "seats": 2
+        },
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 67849,
+          "seats": 1
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 57886,
+          "seats": 1
+        }
+      ]
+    },
+    {
+      "code": "13",
+      "name": "Ciudad Real",
+      "seats": 5,
+      "parties": [
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 109878,
+          "seats": 2
+        },
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 88508,
+          "seats": 2
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 72136,
+          "seats": 1
+        }
+      ]
+    },
+    {
+      "code": "16",
+      "name": "Cuenca",
+      "seats": 3,
+      "parties": [
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 43392,
+          "seats": 1
+        },
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 37639,
+          "seats": 1
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 27757,
+          "seats": 1
+        }
+      ]
+    },
+    {
+      "code": "19",
+      "name": "Guadalajara",
+      "seats": 3,
+      "parties": [
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 49245,
+          "seats": 1
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 42674,
+          "seats": 1
+        },
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 41268,
+          "seats": 1
+        }
+      ]
+    },
+    {
+      "code": "45",
+      "name": "Toledo",
+      "seats": 6,
+      "parties": [
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 139555,
+          "seats": 2
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 118447,
+          "seats": 2
+        },
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 110829,
+          "seats": 2
+        }
+      ]
+    },
+    {
+      "code": "05",
+      "name": "Ávila",
+      "seats": 3,
+      "parties": [
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 40044,
+          "seats": 1
+        },
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 23404,
+          "seats": 1
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 23291,
+          "seats": 1
+        },
+        {
+          "id": "local-xav",
+          "shortName": "XAV",
+          "votes": 7428,
+          "seats": 0
+        }
+      ]
+    },
+    {
+      "code": "09",
+      "name": "Burgos",
+      "seats": 4,
+      "parties": [
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 82156,
+          "seats": 2
+        },
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 64270,
+          "seats": 1
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 42202,
+          "seats": 1
+        }
+      ]
+    },
+    {
+      "code": "24",
+      "name": "León",
+      "seats": 4,
+      "parties": [
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 99212,
+          "seats": 2
+        },
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 83441,
+          "seats": 1
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 56614,
+          "seats": 1
+        },
+        {
+          "id": "local-u p l",
+          "shortName": "U P L",
+          "votes": 23635,
+          "seats": 0
+        }
+      ]
+    },
+    {
+      "code": "34",
+      "name": "Palencia",
+      "seats": 3,
+      "parties": [
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 39697,
+          "seats": 1
+        },
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 30255,
+          "seats": 1
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 19942,
+          "seats": 1
+        },
+        {
+          "id": "local-vp",
+          "shortName": "VP",
+          "votes": 1996,
+          "seats": 0
+        }
+      ]
+    },
+    {
+      "code": "37",
+      "name": "Salamanca",
+      "seats": 4,
+      "parties": [
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 89446,
+          "seats": 2
+        },
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 53720,
+          "seats": 1
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 45779,
+          "seats": 1
+        }
+      ]
+    },
+    {
+      "code": "40",
+      "name": "Segovia",
+      "seats": 3,
+      "parties": [
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 39193,
+          "seats": 1
+        },
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 24587,
+          "seats": 1
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 20100,
+          "seats": 1
+        }
+      ]
+    },
+    {
+      "code": "42",
+      "name": "Soria",
+      "seats": 2,
+      "parties": [
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 18107,
+          "seats": 1
+        },
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 13239,
+          "seats": 1
+        },
+        {
+          "id": "local-sy",
+          "shortName": "SY",
+          "votes": 9920,
+          "seats": 0
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 7802,
+          "seats": 0
+        }
+      ]
+    },
+    {
+      "code": "47",
+      "name": "Valladolid",
+      "seats": 5,
+      "parties": [
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 127115,
+          "seats": 2
+        },
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 94103,
+          "seats": 2
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 77171,
+          "seats": 1
+        }
+      ]
+    },
+    {
+      "code": "49",
+      "name": "Zamora",
+      "seats": 3,
+      "parties": [
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 44747,
+          "seats": 2
+        },
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 30042,
+          "seats": 1
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 21627,
+          "seats": 0
+        }
+      ]
+    },
+    {
+      "code": "08",
+      "name": "Barcelona",
+      "seats": 32,
+      "parties": [
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 919784,
+          "seats": 13
+        },
+        {
+          "id": "erc",
+          "shortName": "ERC",
+          "votes": 484868,
+          "seats": 7
+        },
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 384544,
+          "seats": 5
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 345288,
+          "seats": 4
+        },
+        {
+          "id": "junts",
+          "shortName": "JUNTS",
+          "votes": 246856,
+          "seats": 3
+        },
+        {
+          "id": "local-cup pr",
+          "shortName": "CUP PR",
+          "votes": 75133,
+          "seats": 0
+        },
+        {
+          "id": "podemos",
+          "shortName": "PODEMOS",
+          "votes": 64746,
+          "seats": 0
+        }
+      ]
+    },
+    {
+      "code": "17",
+      "name": "Girona",
+      "seats": 6,
+      "parties": [
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 86467,
+          "seats": 2
+        },
+        {
+          "id": "erc",
+          "shortName": "ERC",
+          "votes": 67173,
+          "seats": 2
+        },
+        {
+          "id": "junts",
+          "shortName": "JUNTS",
+          "votes": 57944,
+          "seats": 1
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 37226,
+          "seats": 1
+        },
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 31417,
+          "seats": 0
+        },
+        {
+          "id": "local-cup pr",
+          "shortName": "CUP PR",
+          "votes": 19507,
+          "seats": 0
+        }
+      ]
+    },
+    {
+      "code": "25",
+      "name": "Lleida",
+      "seats": 4,
+      "parties": [
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 48418,
+          "seats": 2
+        },
+        {
+          "id": "erc",
+          "shortName": "ERC",
+          "votes": 46657,
+          "seats": 1
+        },
+        {
+          "id": "junts",
+          "shortName": "JUNTS",
+          "votes": 29273,
+          "seats": 1
+        },
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 22846,
+          "seats": 0
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 19802,
+          "seats": 0
+        },
+        {
+          "id": "local-cup pr",
+          "shortName": "CUP PR",
+          "votes": 5607,
+          "seats": 0
+        }
+      ]
+    },
+    {
+      "code": "43",
+      "name": "Tarragona",
+      "seats": 6,
+      "parties": [
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 109754,
+          "seats": 2
+        },
+        {
+          "id": "erc",
+          "shortName": "ERC",
+          "votes": 76755,
+          "seats": 2
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 61071,
+          "seats": 1
+        },
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 50124,
+          "seats": 1
+        },
+        {
+          "id": "junts",
+          "shortName": "JUNTS",
+          "votes": 36594,
+          "seats": 0
+        },
+        {
+          "id": "local-cup pr",
+          "shortName": "CUP PR",
+          "votes": 9117,
+          "seats": 0
+        }
+      ]
+    },
+    {
+      "code": "06",
+      "name": "Badajoz",
+      "seats": 5,
+      "parties": [
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 145317,
+          "seats": 2
+        },
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 139031,
+          "seats": 2
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 85860,
+          "seats": 1
+        }
+      ]
+    },
+    {
+      "code": "10",
+      "name": "Cáceres",
+      "seats": 4,
+      "parties": [
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 88039,
+          "seats": 2
+        },
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 83131,
+          "seats": 1
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 51527,
+          "seats": 1
+        }
+      ]
+    },
+    {
+      "code": "15",
+      "name": "A Coruña",
+      "seats": 8,
+      "parties": [
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 294668,
+          "seats": 4
+        },
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 177652,
+          "seats": 3
+        },
+        {
+          "id": "bng",
+          "shortName": "BNG",
+          "votes": 112773,
+          "seats": 1
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 56738,
+          "seats": 0
+        }
+      ]
+    },
+    {
+      "code": "27",
+      "name": "Lugo",
+      "seats": 4,
+      "parties": [
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 96241,
+          "seats": 3
+        },
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 53569,
+          "seats": 1
+        },
+        {
+          "id": "bng",
+          "shortName": "BNG",
+          "votes": 27428,
+          "seats": 0
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 13636,
+          "seats": 0
+        }
+      ]
+    },
+    {
+      "code": "32",
+      "name": "Ourense",
+      "seats": 4,
+      "parties": [
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 90034,
+          "seats": 3
+        },
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 49976,
+          "seats": 1
+        },
+        {
+          "id": "bng",
+          "shortName": "BNG",
+          "votes": 24469,
+          "seats": 0
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 14349,
+          "seats": 0
+        }
+      ]
+    },
+    {
+      "code": "36",
+      "name": "Pontevedra",
+      "seats": 7,
+      "parties": [
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 233416,
+          "seats": 4
+        },
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 170102,
+          "seats": 2
+        },
+        {
+          "id": "bng",
+          "shortName": "BNG",
+          "votes": 91249,
+          "seats": 1
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 46179,
+          "seats": 0
+        },
+        {
+          "id": "podemos",
+          "shortName": "PODEMOS",
+          "votes": 11816,
+          "seats": 0
+        }
+      ]
+    },
+    {
+      "code": "28",
+      "name": "Madrid",
+      "seats": 38,
+      "parties": [
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 1530154,
+          "seats": 17
+        },
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 969737,
+          "seats": 11
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 865716,
+          "seats": 10
+        },
+        {
+          "id": "podemos",
+          "shortName": "PODEMOS",
+          "votes": 88905,
+          "seats": 0
+        }
+      ]
+    },
+    {
+      "code": "31",
+      "name": "Navarra",
+      "seats": 5,
+      "parties": [
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 89918,
+          "seats": 2
+        },
+        {
+          "id": "bildu",
+          "shortName": "EH BILDU",
+          "votes": 69373,
+          "seats": 1
+        },
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 59492,
+          "seats": 1
+        },
+        {
+          "id": "upn",
+          "shortName": "UPN",
+          "votes": 58010,
+          "seats": 1
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 33193,
+          "seats": 0
+        },
+        {
+          "id": "local-gbai",
+          "shortName": "GBAI",
+          "votes": 11047,
+          "seats": 0
+        },
+        {
+          "id": "podemos",
+          "shortName": "PODEMOS",
+          "votes": 6971,
+          "seats": 0
+        }
+      ]
+    },
+    {
+      "code": "01",
+      "name": "Araba/Álava",
+      "seats": 4,
+      "parties": [
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 47734,
+          "seats": 1
+        },
+        {
+          "id": "bildu",
+          "shortName": "EH BILDU",
+          "votes": 41214,
+          "seats": 1
+        },
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 33402,
+          "seats": 1
+        },
+        {
+          "id": "pnv",
+          "shortName": "PNV",
+          "votes": 24369,
+          "seats": 1
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 11885,
+          "seats": 0
+        },
+        {
+          "id": "podemos",
+          "shortName": "PODEMOS",
+          "votes": 3633,
+          "seats": 0
+        },
+        {
+          "id": "salf",
+          "shortName": "SALF",
+          "votes": 3549,
+          "seats": 0
+        }
+      ]
+    },
+    {
+      "code": "20",
+      "name": "Gipuzkoa",
+      "seats": 6,
+      "parties": [
+        {
+          "id": "bildu",
+          "shortName": "EH BILDU",
+          "votes": 144677,
+          "seats": 3
+        },
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 88344,
+          "seats": 2
+        },
+        {
+          "id": "pnv",
+          "shortName": "PNV",
+          "votes": 72844,
+          "seats": 1
+        },
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 35706,
+          "seats": 0
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 14058,
+          "seats": 0
+        },
+        {
+          "id": "salf",
+          "shortName": "SALF",
+          "votes": 7801,
+          "seats": 0
+        }
+      ]
+    },
+    {
+      "code": "48",
+      "name": "Bizkaia",
+      "seats": 8,
+      "parties": [
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 162875,
+          "seats": 3
+        },
+        {
+          "id": "bildu",
+          "shortName": "EH BILDU",
+          "votes": 159412,
+          "seats": 2
+        },
+        {
+          "id": "pnv",
+          "shortName": "PNV",
+          "votes": 144466,
+          "seats": 2
+        },
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 79047,
+          "seats": 1
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 29453,
+          "seats": 0
+        },
+        {
+          "id": "salf",
+          "shortName": "SALF",
+          "votes": 12969,
+          "seats": 0
+        }
+      ]
+    },
+    {
+      "code": "30",
+      "name": "Murcia",
+      "seats": 10,
+      "parties": [
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 290984,
+          "seats": 4
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 252071,
+          "seats": 4
+        },
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 165016,
+          "seats": 2
+        }
+      ]
+    },
+    {
+      "code": "26",
+      "name": "La Rioja",
+      "seats": 4,
+      "parties": [
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 79805,
+          "seats": 2
+        },
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 57591,
+          "seats": 2
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 27926,
+          "seats": 0
+        }
+      ]
+    },
+    {
+      "code": "03",
+      "name": "Alicante/Alacant",
+      "seats": 12,
+      "parties": [
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 333843,
+          "seats": 5
+        },
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 268450,
+          "seats": 4
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 241568,
+          "seats": 3
+        }
+      ]
+    },
+    {
+      "code": "12",
+      "name": "Castellón/Castelló",
+      "seats": 5,
+      "parties": [
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 111229,
+          "seats": 2
+        },
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 95302,
+          "seats": 2
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 82159,
+          "seats": 1
+        },
+        {
+          "id": "podemos",
+          "shortName": "PODEMOS",
+          "votes": 6917,
+          "seats": 0
+        }
+      ]
+    },
+    {
+      "code": "46",
+      "name": "Valencia/València",
+      "seats": 16,
+      "parties": [
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 509827,
+          "seats": 6
+        },
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 449069,
+          "seats": 5
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 377108,
+          "seats": 5
+        },
+        {
+          "id": "podemos",
+          "shortName": "PODEMOS",
+          "votes": 39030,
+          "seats": 0
+        },
+        {
+          "id": "salf",
+          "shortName": "SALF",
+          "votes": 28766,
+          "seats": 0
+        }
+      ]
+    },
+    {
+      "code": "51",
+      "name": "Ceuta",
+      "seats": 1,
+      "parties": [
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 11520,
+          "seats": 1
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 11307,
+          "seats": 0
+        },
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 9328,
+          "seats": 0
+        }
+      ]
+    },
+    {
+      "code": "52",
+      "name": "Melilla",
+      "seats": 1,
+      "parties": [
+        {
+          "id": "pp",
+          "shortName": "PP",
+          "votes": 12455,
+          "seats": 1
+        },
+        {
+          "id": "vox",
+          "shortName": "VOX",
+          "votes": 6604,
+          "seats": 0
+        },
+        {
+          "id": "psoe",
+          "shortName": "PSOE",
+          "votes": 5936,
+          "seats": 0
+        },
+        {
+          "id": "local-cpm",
+          "shortName": "CPM",
+          "votes": 1283,
+          "seats": 0
+        }
+      ]
+    }
+  ],
+  "census": {
+    "totalElectors": 38728356,
+    "residentSpain": 35958711,
+    "residentAbroad": 2769645,
+    "firstTimeGeneralElectionVoters": 1615127,
+    "asOf": "2026-10-09",
+    "source": "https://www.ine.es/dyngs/Prensa/es/EG2026.htm"
+  }
+}

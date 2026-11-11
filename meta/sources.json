@@ -1,0 +1,26 @@
+{
+  "generatedAt": "2026-11-11T09:53:20.239871+00:00",
+  "classification": {
+    "census": {
+      "type": "official",
+      "publisher": "INE / Oficina del Censo Electoral",
+      "url": "https://www.ine.es/dyngs/Prensa/es/EG2026.htm"
+    },
+    "historicalResults": {
+      "type": "official",
+      "publisher": "Ministerio del Interior / Infoelectoral",
+      "url": "https://infoelectoral.interior.gob.es/es/elecciones-celebradas/datos-abiertos/index.html"
+    },
+    "polls": {
+      "type": "survey aggregation",
+      "publisher": "VotoMunicipal open-data collection",
+      "url": "https://votomunicipal.es/datos-abiertos/"
+    },
+    "seatProjection": {
+      "type": "derived model",
+      "official": false,
+      "modelVersion": "poll-average-provincial-swing-v3"
+    }
+  },
+  "warning": "El censo no mide intención de voto. Las encuestas son estimaciones muestrales. La proyección de escaños es derivada."
+}
