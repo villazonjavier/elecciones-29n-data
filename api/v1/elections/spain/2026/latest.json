@@ -1,7 +1,7 @@
 {
-  "timestamp": 1794498924234,
-  "generatedAt": "2026-11-12T15:55:24.234680+00:00",
-  "generatedAtMadrid": "2026-11-12T16:55:24.234680+01:00",
+  "timestamp": 1794505185964,
+  "generatedAt": "2026-11-12T17:39:45.964787+00:00",
+  "generatedAtMadrid": "2026-11-12T18:39:45.964787+01:00",
   "dataAsOf": "2026-11-10",
   "source": "Datos de fuentes públicas verificables · 17 observaciones / 17 casas demoscópicas",
   "sourceUrl": "https://github.com/villazonjavier/elecciones-29n-data/blob/main/meta/sources.json",
