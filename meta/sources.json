@@ -1,20 +1,45 @@
 {
-  "generatedAt": "2026-11-12T08:28:24.027577+00:00",
+  "generatedAt": "2026-11-12T15:55:25.433511+00:00",
+  "generatedAtMadrid": "2026-11-12T16:55:25.433511+01:00",
   "classification": {
+    "polls": {
+      "type": "public survey aggregation",
+      "publisher": "VotoMunicipal · datos abiertos",
+      "url": "https://votomunicipal.es/datos-abiertos/",
+      "usedFor": "Intención de voto agregada; conserva casa demoscópica, fecha y fuente original"
+    },
+    "cis": {
+      "type": "official survey reference",
+      "publisher": "Centro de Investigaciones Sociológicas",
+      "url": "https://www.cis.es/es/estudios/barometro-de-octubre-2026",
+      "usedFor": "Contraste oficial de estimación de voto; no se fuerza en el promedio si está fuera de la ventana temporal"
+    },
     "census": {
       "type": "official",
       "publisher": "INE / Oficina del Censo Electoral",
-      "url": "https://www.ine.es/dyngs/Prensa/es/EG2026.htm"
+      "url": "https://www.ine.es/dyngs/CEL/es/index.htm?cid=1703",
+      "usedFor": "Censo electoral 29N y electores"
     },
     "historicalResults": {
       "type": "official",
       "publisher": "Ministerio del Interior / Infoelectoral",
-      "url": "https://infoelectoral.interior.gob.es/es/elecciones-celebradas/datos-abiertos/index.html"
+      "url": "https://infoelectoral.interior.gob.es/es/elecciones-celebradas/datos-abiertos/",
+      "usedFor": "Resultados históricos y base de contraste provincial"
     },
-    "polls": {
-      "type": "survey aggregation",
-      "publisher": "VotoMunicipal open-data collection",
-      "url": "https://votomunicipal.es/datos-abiertos/"
+    "electionPortal": {
+      "type": "official",
+      "publisher": "Ministerio del Interior",
+      "url": "https://www.interior.gob.es/opencms/es/detalle/articulo/Interior-presenta-la-web-y-el-logo-oficiales-de-las-elecciones-generales-del-29-de-noviembre/",
+      "usedFor": "Proceso 29N y futura conexión con resultados provisionales"
+    },
+    "legalFramework": {
+      "type": "official",
+      "publisher": "BOE / Junta Electoral Central",
+      "urls": [
+        "https://www.boe.es/eli/es/rd/2026/10/05/806",
+        "https://www.juntaelectoralcentral.es/"
+      ],
+      "usedFor": "Convocatoria, circunscripciones y normativa electoral"
     },
     "seatProjection": {
       "type": "derived model",
@@ -22,5 +47,5 @@
       "modelVersion": "poll-average-provincial-swing-v3"
     }
   },
-  "warning": "El censo no mide intención de voto. Las encuestas son estimaciones muestrales. La proyección de escaños es derivada."
+  "warning": "El censo no mide intención de voto. Las encuestas son estimaciones muestrales. La proyección de escaños es un cálculo derivado e independiente."
 }
