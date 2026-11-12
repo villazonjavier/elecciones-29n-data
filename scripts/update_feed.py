@@ -10,9 +10,13 @@ from zoneinfo import ZoneInfo
 POLL_URL = "https://votomunicipal.es/datos/encuestas.json"
 BASELINE_URL = "https://votomunicipal.es/datos/congreso-202307.json"
 SOURCE_PAGE = "https://votomunicipal.es/datos-abiertos/"
-INE_URL = "https://www.ine.es/dyngs/Prensa/es/EG2026.htm"
-INTERIOR_URL = "https://infoelectoral.interior.gob.es/es/elecciones-celebradas/datos-abiertos/index.html"
+INE_URL = "https://www.ine.es/dyngs/CEL/es/index.htm?cid=1703"
+INTERIOR_URL = "https://infoelectoral.interior.gob.es/es/elecciones-celebradas/datos-abiertos/"
+INTERIOR_29N_URL = "https://www.interior.gob.es/opencms/es/detalle/articulo/Interior-presenta-la-web-y-el-logo-oficiales-de-las-elecciones-generales-del-29-de-noviembre/"
+CIS_URL = "https://www.cis.es/es/estudios/barometro-de-octubre-2026"
 BOE_URL = "https://www.boe.es/eli/es/rd/2026/10/05/806"
+JEC_URL = "https://www.juntaelectoralcentral.es/"
+PUBLIC_SOURCES_URL = "https://github.com/villazonjavier/elecciones-29n-data/blob/main/meta/sources.json"
 BLACKOUT = date(2026, 11, 24)
 MADRID = ZoneInfo("Europe/Madrid")
 MODEL_VERSION = "poll-average-provincial-swing-v3"
@@ -290,14 +294,18 @@ def build():
     parties.sort(key=lambda x:(x["seats"],x["votePercent"]),reverse=True)
     if sum(x["seats"] for x in parties)!=350:
         raise RuntimeError("La proyección no suma 350 escaños")
+    madrid_now=now.astimezone(MADRID)
     return {
-      "timestamp":int(now.timestamp()*1000),"dataAsOf":pm["latest"],
-      "source":f"Agregador Elecciones 29N · {pm['pollCount']} observaciones / {len(pm['houses'])} casas",
-      "sourceUrl":SOURCE_PAGE,"dataType":"ESTIMATE","countedPercent":None,"turnoutPercent":None,
+      "timestamp":int(now.timestamp()*1000),
+      "generatedAt":now.isoformat(),
+      "generatedAtMadrid":madrid_now.isoformat(),
+      "dataAsOf":pm["latest"],
+      "source":f"Datos de fuentes públicas verificables · {pm['pollCount']} observaciones / {len(pm['houses'])} casas demoscópicas",
+      "sourceUrl":PUBLIC_SOURCES_URL,"dataType":"ESTIMATE","countedPercent":None,"turnoutPercent":None,
       "modelVersion":MODEL_VERSION,"pollCount":pm["pollCount"],"houses":pm["houses"],
       "fallbackParties":pm.get("fallbackParties",[]),
-      "methodology":"Intención de voto: última encuesta por casa en ventana de 21 días, ponderada por recencia y raíz de muestra. Escaños: swing provincial sobre el resultado oficial de 23J, umbral del 3 % y D'Hondt. La proyección es un modelo, no un dato oficial.",
-      "sources":[POLL_URL,BASELINE_URL,INTERIOR_URL,INE_URL,BOE_URL],
+      "methodology":"Intención de voto: encuestas publicadas en fuentes abiertas, usando la última medición por casa en una ventana reciente y ponderación por recencia y muestra. El CIS se conserva como referencia oficial de contraste; si queda fuera de la ventana temporal no se fuerza su peso en el promedio. Censo: INE/OCE. Base histórica y contraste: Ministerio del Interior/Infoelectoral. Circunscripciones y normativa: BOE/JEC. Escaños: proyección provincial con barrera del 3 % y D'Hondt. La proyección es un modelo independiente, no un resultado oficial.",
+      "sources":[SOURCE_PAGE,CIS_URL,INE_URL,INTERIOR_URL,INTERIOR_29N_URL,BOE_URL,JEC_URL],
       "parties":parties,"provinces":provs,
       "census":{"totalElectors":38728356,"residentSpain":35958711,"residentAbroad":2769645,
                 "firstTimeGeneralElectionVoters":1615127,"asOf":"2026-10-09","source":INE_URL}
@@ -326,15 +334,50 @@ def main():
     feed=build()
     out.write_text(json.dumps(feed,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     Path("public/meta").mkdir(parents=True,exist_ok=True)
+    now_meta=datetime.now(timezone.utc)
     sources={
-      "generatedAt":datetime.now(timezone.utc).isoformat(),
+      "generatedAt":now_meta.isoformat(),
+      "generatedAtMadrid":now_meta.astimezone(MADRID).isoformat(),
       "classification":{
-        "census":{"type":"official","publisher":"INE / Oficina del Censo Electoral","url":INE_URL},
-        "historicalResults":{"type":"official","publisher":"Ministerio del Interior / Infoelectoral","url":INTERIOR_URL},
-        "polls":{"type":"survey aggregation","publisher":"VotoMunicipal open-data collection","url":SOURCE_PAGE},
+        "polls":{
+          "type":"public survey aggregation",
+          "publisher":"VotoMunicipal · datos abiertos",
+          "url":SOURCE_PAGE,
+          "usedFor":"Intención de voto agregada; conserva casa demoscópica, fecha y fuente original"
+        },
+        "cis":{
+          "type":"official survey reference",
+          "publisher":"Centro de Investigaciones Sociológicas",
+          "url":CIS_URL,
+          "usedFor":"Contraste oficial de estimación de voto; no se fuerza en el promedio si está fuera de la ventana temporal"
+        },
+        "census":{
+          "type":"official",
+          "publisher":"INE / Oficina del Censo Electoral",
+          "url":INE_URL,
+          "usedFor":"Censo electoral 29N y electores"
+        },
+        "historicalResults":{
+          "type":"official",
+          "publisher":"Ministerio del Interior / Infoelectoral",
+          "url":INTERIOR_URL,
+          "usedFor":"Resultados históricos y base de contraste provincial"
+        },
+        "electionPortal":{
+          "type":"official",
+          "publisher":"Ministerio del Interior",
+          "url":INTERIOR_29N_URL,
+          "usedFor":"Proceso 29N y futura conexión con resultados provisionales"
+        },
+        "legalFramework":{
+          "type":"official",
+          "publisher":"BOE / Junta Electoral Central",
+          "urls":[BOE_URL,JEC_URL],
+          "usedFor":"Convocatoria, circunscripciones y normativa electoral"
+        },
         "seatProjection":{"type":"derived model","official":False,"modelVersion":MODEL_VERSION}
       },
-      "warning":"El censo no mide intención de voto. Las encuestas son estimaciones muestrales. La proyección de escaños es derivada."
+      "warning":"El censo no mide intención de voto. Las encuestas son estimaciones muestrales. La proyección de escaños es un cálculo derivado e independiente."
     }
     Path("public/meta/sources.json").write_text(json.dumps(sources,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
     Path("public/index.html").write_text("""<!doctype html><meta charset="utf-8"><title>Elecciones 29N · Datos</title>
