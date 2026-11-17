@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
-import json, math, random, re, unicodedata, urllib.request
+import json, math, random, re, time, unicodedata, urllib.parse, urllib.request
 from dataclasses import dataclass
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
@@ -79,7 +79,24 @@ class Obs:
     source: str
 
 def fetch_json(url: str):
-    req = urllib.request.Request(url, headers={"User-Agent":"Elecciones29N-Data/3.0","Accept":"application/json"})
+    # Evita respuestas obsoletas de CDN/proxy en los feeds que cambian varias veces al día.
+    # El parámetro cambia en cada ejecución horaria y los headers fuerzan revalidación.
+    parsed = urllib.parse.urlsplit(url)
+    query = urllib.parse.parse_qsl(parsed.query, keep_blank_values=True)
+    query.append(("_refresh", str(int(time.time()))))
+    fresh_url = urllib.parse.urlunsplit((
+        parsed.scheme, parsed.netloc, parsed.path,
+        urllib.parse.urlencode(query), parsed.fragment
+    ))
+    req = urllib.request.Request(
+        fresh_url,
+        headers={
+            "User-Agent":"Elecciones29N-Data/3.1",
+            "Accept":"application/json",
+            "Cache-Control":"no-cache, no-store, max-age=0",
+            "Pragma":"no-cache",
+        },
+    )
     with urllib.request.urlopen(req, timeout=30) as r:
         return json.loads(r.read(8*1024*1024).decode("utf-8"))
 
@@ -260,6 +277,7 @@ def build():
         raise RuntimeError("Veda electoral: no se publica una estimación nueva")
     poll_raw=fetch_json(POLL_URL)
     base_raw=fetch_json(BASELINE_URL)
+    source_revision=poll_raw.get("revision")
     estimates,pm=aggregate(poll_raw)
     latest=date.fromisoformat(pm["latest"])
     if (local-latest).days>10: raise RuntimeError("Encuestas demasiado antiguas")
@@ -303,6 +321,8 @@ def build():
       "source":f"Datos de fuentes públicas verificables · {pm['pollCount']} observaciones / {len(pm['houses'])} casas demoscópicas",
       "sourceUrl":PUBLIC_SOURCES_URL,"dataType":"ESTIMATE","countedPercent":None,"turnoutPercent":None,
       "modelVersion":MODEL_VERSION,"pollCount":pm["pollCount"],"houses":pm["houses"],
+      "sourceDataRevision":source_revision,
+      "refreshPolicy":"Servidor: comprobación automática cada hora; la app consulta el feed remoto al abrirse.",
       "fallbackParties":pm.get("fallbackParties",[]),
       "methodology":"Intención de voto: encuestas publicadas en fuentes abiertas, usando la última medición por casa en una ventana reciente y ponderación por recencia y muestra. El CIS se conserva como referencia oficial de contraste; si queda fuera de la ventana temporal no se fuerza su peso en el promedio. Censo: INE/OCE. Base histórica y contraste: Ministerio del Interior/Infoelectoral. Circunscripciones y normativa: BOE/JEC. Escaños: proyección provincial con barrera del 3 % y D'Hondt. La proyección es un modelo independiente, no un resultado oficial.",
       "sources":[SOURCE_PAGE,CIS_URL,INE_URL,INTERIOR_URL,INTERIOR_29N_URL,BOE_URL,JEC_URL],
