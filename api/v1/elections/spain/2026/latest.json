@@ -1,20 +1,18 @@
 {
-  "timestamp": 1795289599765,
-  "generatedAt": "2026-11-21T19:33:19.765087+00:00",
-  "generatedAtMadrid": "2026-11-21T20:33:19.765087+01:00",
-  "dataAsOf": "2026-11-20",
-  "source": "Datos de fuentes públicas verificables · 27 observaciones / 22 casas demoscópicas",
+  "timestamp": 1795307471721,
+  "generatedAt": "2026-11-22T00:31:11.721911+00:00",
+  "generatedAtMadrid": "2026-11-22T01:31:11.721911+01:00",
+  "dataAsOf": "2026-11-21",
+  "source": "Datos de fuentes públicas verificables · 25 observaciones / 20 casas demoscópicas",
   "sourceUrl": "https://github.com/villazonjavier/elecciones-29n-data/blob/main/meta/sources.json",
   "dataType": "ESTIMATE",
   "countedPercent": null,
   "turnoutPercent": null,
   "modelVersion": "poll-average-provincial-swing-v3",
-  "pollCount": 27,
+  "pollCount": 25,
   "houses": [
     "40dB",
     "Ateneo del Dato",
-    "CIS",
-    "CIS (Descifrando la Guerra)",
     "Celeste-Tel",
     "DYM",
     "Data10",
@@ -34,7 +32,7 @@
     "Winston",
     "YouGov"
   ],
-  "sourceDataRevision": 1386910742,
+  "sourceDataRevision": 1386975084,
   "refreshPolicy": "Servidor: comprobación automática cada hora; la app consulta el feed remoto al abrirse.",
   "fallbackParties": [
     "FA"
@@ -54,34 +52,34 @@
       "id": "pp",
       "name": "Partido Popular",
       "shortName": "PP",
-      "votePercent": 30.71,
-      "seats": 127,
-      "lowSeats": 120,
-      "highSeats": 133
+      "votePercent": 31.02,
+      "seats": 129,
+      "lowSeats": 123,
+      "highSeats": 134
     },
     {
       "id": "psoe",
       "name": "Partido Socialista Obrero Español",
       "shortName": "PSOE",
-      "votePercent": 28.35,
+      "votePercent": 28.39,
       "seats": 118,
       "lowSeats": 110,
-      "highSeats": 123
+      "highSeats": 122
     },
     {
       "id": "vox",
       "name": "Vox",
       "shortName": "VOX",
-      "votePercent": 18.66,
+      "votePercent": 18.56,
       "seats": 66,
-      "lowSeats": 62,
+      "lowSeats": 61,
       "highSeats": 69
     },
     {
       "id": "erc",
       "name": "Esquerra Republicana de Catalunya",
       "shortName": "ERC",
-      "votePercent": 2.56,
+      "votePercent": 2.58,
       "seats": 11,
       "lowSeats": 8,
       "highSeats": 13
@@ -91,7 +89,7 @@
       "name": "Frente Amplio / espacio Sumar",
       "shortName": "FA",
       "votePercent": 6.6,
-      "seats": 9,
+      "seats": 8,
       "lowSeats": 7,
       "highSeats": 11
     },
@@ -99,7 +97,7 @@
       "id": "bildu",
       "name": "EH Bildu",
       "shortName": "EH BILDU",
-      "votePercent": 1.45,
+      "votePercent": 1.44,
       "seats": 7,
       "lowSeats": 6,
       "highSeats": 10
@@ -108,7 +106,7 @@
       "id": "junts",
       "name": "Junts",
       "shortName": "JUNTS",
-      "votePercent": 1.25,
+      "votePercent": 1.26,
       "seats": 4,
       "lowSeats": 3,
       "highSeats": 7
@@ -117,7 +115,7 @@
       "id": "pnv",
       "name": "EAJ-PNV",
       "shortName": "PNV",
-      "votePercent": 0.8,
+      "votePercent": 0.81,
       "seats": 3,
       "lowSeats": 1,
       "highSeats": 6
@@ -126,25 +124,16 @@
       "id": "bng",
       "name": "Bloque Nacionalista Galego",
       "shortName": "BNG",
-      "votePercent": 0.98,
+      "votePercent": 0.99,
       "seats": 2,
       "lowSeats": 1,
       "highSeats": 6
     },
     {
-      "id": "others",
-      "name": "Otros/locales",
-      "shortName": "OTROS",
-      "votePercent": 4.71,
-      "seats": 1,
-      "lowSeats": 0,
-      "highSeats": 4
-    },
-    {
       "id": "cc",
       "name": "Coalición Canaria",
       "shortName": "CC",
-      "votePercent": 0.37,
+      "votePercent": 0.38,
       "seats": 1,
       "lowSeats": 0,
       "highSeats": 3
@@ -162,7 +151,7 @@
       "id": "salf",
       "name": "Se Acabó La Fiesta",
       "shortName": "SALF",
-      "votePercent": 1.99,
+      "votePercent": 1.98,
       "seats": 0,
       "lowSeats": 0,
       "highSeats": 0
@@ -171,7 +160,7 @@
       "id": "podemos",
       "name": "Podemos",
       "shortName": "PODEMOS",
-      "votePercent": 1.36,
+      "votePercent": 1.32,
       "seats": 0,
       "lowSeats": 0,
       "highSeats": 0
@@ -186,25 +175,25 @@
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 116946,
+          "votes": 117889,
           "seats": 2
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 98627,
+          "votes": 97868,
           "seats": 2
         },
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 79889,
+          "votes": 79847,
           "seats": 2
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 11004,
+          "votes": 10981,
           "seats": 0
         }
       ]
@@ -217,31 +206,25 @@
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 207739,
+          "votes": 209431,
           "seats": 3
         },
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 190611,
+          "votes": 190527,
           "seats": 3
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 147044,
+          "votes": 145926,
           "seats": 2
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 44321,
-          "seats": 0
-        },
-        {
-          "id": "salf",
-          "shortName": "SALF",
-          "votes": 12760,
+          "votes": 44233,
           "seats": 0
         }
       ]
@@ -254,31 +237,31 @@
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 160974,
+          "votes": 162222,
           "seats": 3
         },
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 131425,
+          "votes": 131317,
           "seats": 2
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 96075,
+          "votes": 95308,
           "seats": 1
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 33600,
+          "votes": 33521,
           "seats": 0
         },
         {
           "id": "salf",
           "shortName": "SALF",
-          "votes": 9081,
+          "votes": 9013,
           "seats": 0
         }
       ]
@@ -291,25 +274,25 @@
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 172903,
+          "votes": 174287,
           "seats": 3
         },
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 148509,
+          "votes": 148423,
           "seats": 2
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 122292,
+          "votes": 121345,
           "seats": 2
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 31361,
+          "votes": 31294,
           "seats": 0
         }
       ]
@@ -322,25 +305,25 @@
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 87504,
+          "votes": 88189,
           "seats": 2
         },
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 83166,
+          "votes": 83103,
           "seats": 2
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 57012,
+          "votes": 56560,
           "seats": 1
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 14411,
+          "votes": 14378,
           "seats": 0
         }
       ]
@@ -353,31 +336,31 @@
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 127633,
+          "votes": 128615,
           "seats": 2
         },
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 119540,
+          "votes": 119435,
           "seats": 2
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 81860,
+          "votes": 81202,
           "seats": 1
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 15739,
+          "votes": 15701,
           "seats": 0
         },
         {
           "id": "local-jm",
           "shortName": "JM",
-          "votes": 8279,
+          "votes": 8259,
           "seats": 0
         }
       ]
@@ -390,25 +373,25 @@
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 280353,
+          "votes": 282584,
           "seats": 5
         },
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 213854,
+          "votes": 213720,
           "seats": 3
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 195442,
+          "votes": 193920,
           "seats": 3
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 51683,
+          "votes": 51571,
           "seats": 0
         }
       ]
@@ -421,31 +404,31 @@
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 355821,
+          "votes": 355639,
           "seats": 4
         },
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 336938,
+          "votes": 339658,
           "seats": 4
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 218088,
+          "votes": 216414,
           "seats": 3
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 81628,
+          "votes": 81461,
           "seats": 1
         },
         {
           "id": "salf",
           "shortName": "SALF",
-          "votes": 21572,
+          "votes": 21419,
           "seats": 0
         }
       ]
@@ -458,31 +441,31 @@
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 43377,
+          "votes": 43703,
           "seats": 1
         },
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 36783,
+          "votes": 36744,
           "seats": 1
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 23297,
+          "votes": 23105,
           "seats": 1
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 7517,
+          "votes": 7498,
           "seats": 0
         },
         {
           "id": "salf",
           "shortName": "SALF",
-          "votes": 2428,
+          "votes": 2409,
           "seats": 0
         }
       ]
@@ -495,31 +478,31 @@
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 24422,
+          "votes": 24612,
           "seats": 1
         },
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 19665,
+          "votes": 19650,
           "seats": 1
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 14803,
+          "votes": 14685,
           "seats": 1
         },
         {
           "id": "local-existe",
           "shortName": "EXISTE",
-          "votes": 11221,
+          "votes": 11195,
           "seats": 0
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 2183,
+          "votes": 2178,
           "seats": 0
         }
       ]
@@ -532,31 +515,25 @@
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 174989,
+          "votes": 176405,
           "seats": 3
         },
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 144255,
+          "votes": 144185,
           "seats": 2
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 120660,
+          "votes": 119736,
           "seats": 2
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 37736,
-          "seats": 0
-        },
-        {
-          "id": "salf",
-          "shortName": "SALF",
-          "votes": 10387,
+          "votes": 37660,
           "seats": 0
         }
       ]
@@ -569,31 +546,31 @@
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 204079,
+          "votes": 205676,
           "seats": 3
         },
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 189391,
+          "votes": 189248,
           "seats": 3
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 116025,
+          "votes": 115105,
           "seats": 1
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 48957,
+          "votes": 48844,
           "seats": 0
         },
         {
           "id": "salf",
           "shortName": "SALF",
-          "votes": 12237,
+          "votes": 12147,
           "seats": 0
         }
       ]
@@ -606,31 +583,31 @@
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 169810,
+          "votes": 171204,
           "seats": 3
         },
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 138457,
+          "votes": 138405,
           "seats": 3
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 117622,
+          "votes": 116735,
           "seats": 2
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 45544,
+          "votes": 45457,
           "seats": 0
         },
         {
           "id": "salf",
           "shortName": "SALF",
-          "votes": 10188,
+          "votes": 10117,
           "seats": 0
         }
       ]
@@ -643,43 +620,37 @@
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 158651,
+          "votes": 158528,
           "seats": 3
         },
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 128322,
-          "seats": 2
+          "votes": 129324,
+          "seats": 3
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 117663,
+          "votes": 116729,
           "seats": 2
         },
         {
           "id": "local-nc bc",
           "shortName": "NC BC",
-          "votes": 42825,
-          "seats": 1
+          "votes": 42726,
+          "seats": 0
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 29364,
+          "votes": 29297,
           "seats": 0
         },
         {
           "id": "cc",
           "shortName": "CC",
-          "votes": 26705,
-          "seats": 0
-        },
-        {
-          "id": "salf",
-          "shortName": "SALF",
-          "votes": 10609,
+          "votes": 27204,
           "seats": 0
         }
       ]
@@ -692,31 +663,31 @@
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 183585,
+          "votes": 184157,
           "seats": 3
         },
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 167538,
+          "votes": 166629,
           "seats": 3
         },
         {
           "id": "cc",
           "shortName": "CC",
-          "votes": 73824,
+          "votes": 74851,
           "seats": 1
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 32451,
+          "votes": 32225,
           "seats": 0
         },
         {
           "id": "salf",
           "shortName": "SALF",
-          "votes": 11100,
+          "votes": 10967,
           "seats": 0
         }
       ]
@@ -729,25 +700,25 @@
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 137396,
+          "votes": 138388,
           "seats": 2
         },
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 104734,
+          "votes": 104592,
           "seats": 2
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 74512,
+          "votes": 73877,
           "seats": 1
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 15962,
+          "votes": 15915,
           "seats": 0
         }
       ]
@@ -760,25 +731,25 @@
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 80881,
+          "votes": 81498,
           "seats": 2
         },
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 67336,
+          "votes": 67272,
           "seats": 1
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 54617,
+          "votes": 54175,
           "seats": 1
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 8354,
+          "votes": 8334,
           "seats": 0
         }
       ]
@@ -791,25 +762,25 @@
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 105021,
+          "votes": 105809,
           "seats": 2
         },
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 88273,
+          "votes": 88179,
           "seats": 2
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 68400,
+          "votes": 67837,
           "seats": 1
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 9179,
+          "votes": 9155,
           "seats": 0
         }
       ]
@@ -822,25 +793,25 @@
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 41561,
+          "votes": 41871,
           "seats": 1
         },
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 37618,
+          "votes": 37576,
           "seats": 1
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 26374,
+          "votes": 26156,
           "seats": 1
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 3346,
+          "votes": 3337,
           "seats": 0
         }
       ]
@@ -853,25 +824,25 @@
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 46413,
+          "votes": 46799,
           "seats": 1
         },
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 40586,
+          "votes": 40575,
           "seats": 1
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 39901,
+          "votes": 39604,
           "seats": 1
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 6740,
+          "votes": 6728,
           "seats": 0
         }
       ]
@@ -884,25 +855,25 @@
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 132249,
+          "votes": 133331,
           "seats": 2
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 111354,
+          "votes": 110511,
           "seats": 2
         },
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 109593,
+          "votes": 109549,
           "seats": 2
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 16571,
+          "votes": 16539,
           "seats": 0
         }
       ]
@@ -915,31 +886,31 @@
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 38578,
+          "votes": 38859,
           "seats": 1
         },
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 23528,
+          "votes": 23498,
           "seats": 1
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 22260,
+          "votes": 22072,
           "seats": 1
         },
         {
           "id": "local-xav",
           "shortName": "XAV",
-          "votes": 7216,
+          "votes": 7195,
           "seats": 0
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 2637,
+          "votes": 2629,
           "seats": 0
         }
       ]
@@ -952,31 +923,25 @@
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 77355,
+          "votes": 77913,
           "seats": 2
         },
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 63145,
+          "votes": 63059,
           "seats": 1
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 39420,
+          "votes": 39084,
           "seats": 1
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 9476,
-          "seats": 0
-        },
-        {
-          "id": "salf",
-          "shortName": "SALF",
-          "votes": 4068,
+          "votes": 9448,
           "seats": 0
         }
       ]
@@ -989,31 +954,31 @@
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 94425,
+          "votes": 95139,
           "seats": 2
         },
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 82868,
+          "votes": 82784,
           "seats": 1
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 53454,
+          "votes": 53018,
           "seats": 1
         },
         {
           "id": "local-u p l",
           "shortName": "U P L",
-          "votes": 22683,
+          "votes": 22626,
           "seats": 0
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 9944,
+          "votes": 9919,
           "seats": 0
         }
       ]
@@ -1026,25 +991,25 @@
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 37915,
+          "votes": 38182,
           "seats": 2
         },
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 30153,
+          "votes": 30107,
           "seats": 1
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 18895,
+          "votes": 18731,
           "seats": 0
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 3153,
+          "votes": 3143,
           "seats": 0
         }
       ]
@@ -1057,25 +1022,25 @@
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 85889,
+          "votes": 86474,
           "seats": 2
         },
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 53827,
+          "votes": 53732,
           "seats": 1
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 43610,
+          "votes": 43221,
           "seats": 1
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 5838,
+          "votes": 5819,
           "seats": 0
         }
       ]
@@ -1088,25 +1053,25 @@
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 37109,
+          "votes": 37368,
           "seats": 1
         },
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 24292,
+          "votes": 24253,
           "seats": 1
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 18881,
+          "votes": 18715,
           "seats": 1
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 3824,
+          "votes": 3812,
           "seats": 0
         }
       ]
@@ -1119,25 +1084,25 @@
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 17550,
+          "votes": 17677,
           "seats": 1
         },
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 13389,
+          "votes": 13371,
           "seats": 1
         },
         {
           "id": "local-sy",
           "shortName": "SY",
-          "votes": 9695,
+          "votes": 9667,
           "seats": 0
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 7502,
+          "votes": 7438,
           "seats": 0
         }
       ]
@@ -1150,25 +1115,25 @@
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 119778,
+          "votes": 120673,
           "seats": 2
         },
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 92526,
+          "votes": 92424,
           "seats": 2
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 72139,
+          "votes": 71543,
           "seats": 1
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 14982,
+          "votes": 14942,
           "seats": 0
         }
       ]
@@ -1181,25 +1146,25 @@
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 42878,
+          "votes": 43171,
           "seats": 2
         },
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 30039,
+          "votes": 29987,
           "seats": 1
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 20559,
+          "votes": 20376,
           "seats": 0
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 3122,
+          "votes": 3112,
           "seats": 0
         }
       ]
@@ -1212,49 +1177,49 @@
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 869747,
+          "votes": 869284,
           "seats": 12
         },
         {
           "id": "erc",
           "shortName": "ERC",
-          "votes": 455550,
+          "votes": 457162,
           "seats": 6
         },
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 348473,
+          "votes": 351279,
           "seats": 5
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 310415,
+          "votes": 308025,
           "seats": 4
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 221741,
+          "votes": 221281,
           "seats": 3
         },
         {
           "id": "junts",
           "shortName": "JUNTS",
-          "votes": 206224,
+          "votes": 207163,
           "seats": 2
         },
         {
           "id": "local-cup pr",
           "shortName": "CUP PR",
-          "votes": 68656,
+          "votes": 68514,
           "seats": 0
         },
         {
           "id": "salf",
           "shortName": "SALF",
-          "votes": 54061,
+          "votes": 53675,
           "seats": 0
         }
       ]
@@ -1267,49 +1232,43 @@
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 84516,
+          "votes": 84438,
           "seats": 2
         },
         {
           "id": "erc",
           "shortName": "ERC",
-          "votes": 65236,
+          "votes": 65441,
           "seats": 2
         },
         {
           "id": "junts",
           "shortName": "JUNTS",
-          "votes": 50037,
+          "votes": 50245,
           "seats": 1
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 34593,
+          "votes": 34313,
           "seats": 1
         },
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 29429,
+          "votes": 29654,
           "seats": 0
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 19117,
+          "votes": 19070,
           "seats": 0
         },
         {
           "id": "local-cup pr",
           "shortName": "CUP PR",
-          "votes": 18425,
-          "seats": 0
-        },
-        {
-          "id": "salf",
-          "shortName": "SALF",
-          "votes": 6482,
+          "votes": 18380,
           "seats": 0
         }
       ]
@@ -1322,43 +1281,43 @@
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 48025,
+          "votes": 47953,
           "seats": 2
         },
         {
           "id": "erc",
           "shortName": "ERC",
-          "votes": 45981,
+          "votes": 46100,
           "seats": 1
         },
         {
           "id": "junts",
           "shortName": "JUNTS",
-          "votes": 25651,
+          "votes": 25743,
           "seats": 1
         },
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 21716,
+          "votes": 21870,
           "seats": 0
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 18673,
+          "votes": 18512,
           "seats": 0
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 7686,
+          "votes": 7662,
           "seats": 0
         },
         {
           "id": "local-cup pr",
           "shortName": "CUP PR",
-          "votes": 5375,
+          "votes": 5358,
           "seats": 0
         }
       ]
@@ -1371,43 +1330,43 @@
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 106511,
+          "votes": 106448,
           "seats": 2
         },
         {
           "id": "erc",
           "shortName": "ERC",
-          "votes": 74009,
+          "votes": 74267,
           "seats": 2
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 56346,
+          "votes": 55909,
           "seats": 1
         },
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 46616,
+          "votes": 46989,
           "seats": 1
         },
         {
           "id": "junts",
           "shortName": "JUNTS",
-          "votes": 31374,
+          "votes": 31515,
           "seats": 0
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 21939,
+          "votes": 21892,
           "seats": 0
         },
         {
           "id": "local-cup pr",
           "shortName": "CUP PR",
-          "votes": 8550,
+          "votes": 8532,
           "seats": 0
         }
       ]
@@ -1420,25 +1379,25 @@
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 138001,
+          "votes": 139031,
           "seats": 2
         },
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 137772,
+          "votes": 137618,
           "seats": 2
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 80890,
+          "votes": 80220,
           "seats": 1
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 14376,
+          "votes": 14338,
           "seats": 0
         }
       ]
@@ -1451,25 +1410,25 @@
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 83576,
+          "votes": 84198,
           "seats": 2
         },
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 82348,
+          "votes": 82255,
           "seats": 1
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 48526,
+          "votes": 48124,
           "seats": 1
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 8784,
+          "votes": 8760,
           "seats": 0
         }
       ]
@@ -1482,31 +1441,31 @@
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 271809,
+          "votes": 273160,
           "seats": 4
         },
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 170995,
+          "votes": 170382,
           "seats": 3
         },
         {
           "id": "bng",
           "shortName": "BNG",
-          "votes": 106298,
+          "votes": 106808,
           "seats": 1
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 51921,
+          "votes": 51364,
           "seats": 0
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 44258,
+          "votes": 44031,
           "seats": 0
         }
       ]
@@ -1519,31 +1478,31 @@
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 92191,
+          "votes": 92582,
           "seats": 3
         },
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 53546,
+          "votes": 53315,
           "seats": 1
         },
         {
           "id": "bng",
           "shortName": "BNG",
-          "votes": 26848,
+          "votes": 26957,
           "seats": 0
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 12958,
+          "votes": 12810,
           "seats": 0
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 5475,
+          "votes": 5443,
           "seats": 0
         }
       ]
@@ -1556,31 +1515,31 @@
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 86144,
+          "votes": 86521,
           "seats": 3
         },
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 49895,
+          "votes": 49687,
           "seats": 1
         },
         {
           "id": "bng",
           "shortName": "BNG",
-          "votes": 23924,
+          "votes": 24024,
           "seats": 0
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 13620,
+          "votes": 13465,
           "seats": 0
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 5416,
+          "votes": 5385,
           "seats": 0
         }
       ]
@@ -1593,37 +1552,31 @@
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 213710,
+          "votes": 214845,
           "seats": 3
         },
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 162513,
+          "votes": 161985,
           "seats": 3
         },
         {
           "id": "bng",
           "shortName": "BNG",
-          "votes": 85371,
+          "votes": 85810,
           "seats": 1
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 41945,
+          "votes": 41508,
           "seats": 0
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 40887,
-          "seats": 0
-        },
-        {
-          "id": "salf",
-          "shortName": "SALF",
-          "votes": 11500,
+          "votes": 40691,
           "seats": 0
         }
       ]
@@ -1636,31 +1589,31 @@
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 1390019,
+          "votes": 1400608,
           "seats": 16
         },
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 919227,
+          "votes": 918343,
           "seats": 10
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 780187,
+          "votes": 773847,
           "seats": 9
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 305226,
+          "votes": 304463,
           "seats": 3
         },
         {
           "id": "salf",
           "shortName": "SALF",
-          "votes": 73276,
+          "votes": 72722,
           "seats": 0
         }
       ]
@@ -1673,49 +1626,49 @@
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 85909,
+          "votes": 86120,
           "seats": 2
         },
         {
           "id": "bildu",
           "shortName": "EH BILDU",
-          "votes": 64750,
+          "votes": 64160,
           "seats": 1
         },
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 54471,
+          "votes": 55074,
           "seats": 1
         },
         {
           "id": "upn",
           "shortName": "UPN",
-          "votes": 53559,
+          "votes": 53608,
           "seats": 1
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 30150,
+          "votes": 30008,
           "seats": 0
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 24121,
+          "votes": 24143,
           "seats": 0
         },
         {
           "id": "local-gbai",
           "shortName": "GBAI",
-          "votes": 10199,
+          "votes": 10208,
           "seats": 0
         },
         {
           "id": "salf",
           "shortName": "SALF",
-          "votes": 6966,
+          "votes": 6937,
           "seats": 0
         }
       ]
@@ -1728,43 +1681,43 @@
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 45561,
+          "votes": 45647,
           "seats": 2
         },
         {
           "id": "bildu",
           "shortName": "EH BILDU",
-          "votes": 38429,
+          "votes": 38058,
           "seats": 1
         },
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 30553,
+          "votes": 30873,
           "seats": 1
         },
         {
           "id": "pnv",
           "shortName": "PNV",
-          "votes": 21866,
+          "votes": 21971,
           "seats": 0
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 12560,
+          "votes": 12564,
           "seats": 0
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 10785,
+          "votes": 10728,
           "seats": 0
         },
         {
           "id": "salf",
           "shortName": "SALF",
-          "votes": 3655,
+          "votes": 3638,
           "seats": 0
         }
       ]
@@ -1777,43 +1730,43 @@
         {
           "id": "bildu",
           "shortName": "EH BILDU",
-          "votes": 136590,
+          "votes": 135532,
           "seats": 3
         },
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 85378,
+          "votes": 85705,
           "seats": 2
         },
         {
           "id": "pnv",
           "shortName": "PNV",
-          "votes": 66179,
+          "votes": 66627,
           "seats": 1
         },
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 33069,
+          "votes": 33481,
           "seats": 0
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 23333,
+          "votes": 23386,
           "seats": 0
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 12916,
+          "votes": 12873,
           "seats": 0
         },
         {
           "id": "salf",
           "shortName": "SALF",
-          "votes": 8136,
+          "votes": 8113,
           "seats": 0
         }
       ]
@@ -1826,43 +1779,43 @@
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 157171,
+          "votes": 157514,
           "seats": 3
         },
         {
           "id": "bildu",
           "shortName": "EH BILDU",
-          "votes": 150277,
+          "votes": 148867,
           "seats": 2
         },
         {
           "id": "pnv",
           "shortName": "PNV",
-          "votes": 131052,
+          "votes": 131722,
           "seats": 2
         },
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 73101,
+          "votes": 73889,
           "seats": 1
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 39755,
+          "votes": 39780,
           "seats": 0
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 27021,
+          "votes": 26886,
           "seats": 0
         },
         {
           "id": "salf",
           "shortName": "SALF",
-          "votes": 13506,
+          "votes": 13446,
           "seats": 0
         }
       ]
@@ -1875,25 +1828,25 @@
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 274848,
+          "votes": 277106,
           "seats": 4
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 236202,
+          "votes": 234422,
           "seats": 4
         },
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 162642,
+          "votes": 162582,
           "seats": 2
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 36796,
+          "votes": 36725,
           "seats": 0
         }
       ]
@@ -1906,31 +1859,31 @@
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 75882,
+          "votes": 76363,
           "seats": 2
         },
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 57141,
+          "votes": 57014,
           "seats": 2
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 26343,
+          "votes": 26096,
           "seats": 0
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 6289,
+          "votes": 6266,
           "seats": 0
         },
         {
           "id": "salf",
           "shortName": "SALF",
-          "votes": 3554,
+          "votes": 3522,
           "seats": 0
         }
       ]
@@ -1943,26 +1896,26 @@
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 307819,
-          "seats": 4
+          "votes": 310307,
+          "seats": 5
         },
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 258285,
+          "votes": 258156,
           "seats": 4
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 220968,
+          "votes": 219274,
           "seats": 3
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 62157,
-          "seats": 1
+          "votes": 62031,
+          "seats": 0
         }
       ]
     },
@@ -1974,31 +1927,25 @@
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 101618,
+          "votes": 102454,
           "seats": 2
         },
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 90853,
+          "votes": 90820,
           "seats": 2
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 74464,
+          "votes": 73903,
           "seats": 1
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 23882,
-          "seats": 0
-        },
-        {
-          "id": "salf",
-          "shortName": "SALF",
-          "votes": 6176,
+          "votes": 23836,
           "seats": 0
         }
       ]
@@ -2011,31 +1958,31 @@
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 458659,
+          "votes": 462505,
           "seats": 6
         },
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 421563,
+          "votes": 421478,
           "seats": 5
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 336566,
+          "votes": 334085,
           "seats": 4
         },
         {
           "id": "fa",
           "shortName": "FA",
-          "votes": 132702,
+          "votes": 132471,
           "seats": 1
         },
         {
           "id": "salf",
           "shortName": "SALF",
-          "votes": 29142,
+          "votes": 28943,
           "seats": 0
         }
       ]
@@ -2048,19 +1995,19 @@
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 11253,
+          "votes": 11346,
           "seats": 1
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 10956,
+          "votes": 10874,
           "seats": 0
         },
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 9508,
+          "votes": 9505,
           "seats": 0
         }
       ]
@@ -2073,25 +2020,25 @@
         {
           "id": "pp",
           "shortName": "PP",
-          "votes": 12144,
+          "votes": 12226,
           "seats": 1
         },
         {
           "id": "vox",
           "shortName": "VOX",
-          "votes": 6387,
+          "votes": 6330,
           "seats": 0
         },
         {
           "id": "psoe",
           "shortName": "PSOE",
-          "votes": 6040,
+          "votes": 6029,
           "seats": 0
         },
         {
           "id": "local-cpm",
           "shortName": "CPM",
-          "votes": 1262,
+          "votes": 1258,
           "seats": 0
         }
       ]
